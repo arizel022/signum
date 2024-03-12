@@ -1,5 +1,42 @@
+@font-face {
+    font-family: 'Robit';
+    font-weight: 300;
+    font-style: normal;
+    src: url('../fonts/robittrial-light.woff2') format('woff2'),
+        url('../fonts/robittrial-light.woff') format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Robit';
+    font-weight: 400;
+    font-style: normal;
+    src: url('../fonts/robittrial-regular.woff2') format('woff2'),
+        url('../fonts/robittrial-regular.woff') format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Robit';
+    font-weight: 500;
+    font-style: normal;
+    src: url('../fonts/robittrial-medium.woff2') format('woff2'),
+        url('../fonts/robittrial-medium.woff') format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Robit';
+    font-weight: 700;
+    font-style: normal;
+    src: url('../fonts/robittrial-bold.woff2') format('woff2'),
+        url('../fonts/robittrial-bold.woff') format('woff');
+    font-display: swap;
+}
+
 @import 'reset';
 @import '../../node_modules/animate.css/animate';
+@import '../../node_modules/magnific-popup/src/css/main.scss';
 
 .sr-only {
     position: absolute;
@@ -15,5 +52,5 @@
 }
 
 .none {
-    display: none!important;
+    display: none !important;
 }

@@ -1,5 +1,5 @@
-@import 'common';
 
+@import 'common';
 $d: #040404;
 $d-l: #232323;
 $or: #FF5E19;
@@ -7,7 +7,7 @@ $l: #DBDBCE;
 
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Robit', sans-serif;
     font-weight: 500;
     line-height: 1.4;
     font-size: 24px;
@@ -22,10 +22,12 @@ body {
     padding: 0 15px;
 }
 
-// .container {
-//     margin: 0 auto;
-//     outline: 1px solid red;
-// }
+.container {
+    // max-width: 1328px;
+    // 
+    // margin: 0 auto;
+    // outline: 1px solid red;
+}
 
 svg {
     fill: currentColor;
@@ -36,6 +38,10 @@ svg {
 @import 'lego/footer';
 
 .section {
+    max-width: 1488px;
+    width: 100%;
+    padding: 0 80px;
+
     &--dark {
         background-color: $d;
     }
@@ -50,10 +56,11 @@ svg {
 
 .button {
     font-size: 17px;
-    padding: 16px 24px;
+    padding: 18px 24px 15px 24px;
     border-radius: 33px;
     background-color: $or;
     color: $d;
+    line-height: 1;
 
     &--grey {
         background-color: $d-l;
@@ -61,7 +68,10 @@ svg {
     }
 }
 
-
+.title {
+    font-size: 38px;
+    max-width: 420px;
+}
 
 
 .close-button {

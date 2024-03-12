@@ -1,31 +1,6 @@
 $(function () {
     new WOW().init();
 
-    // popup-order
-    $('.cta').click(function () {
-        $('.backdrop').addClass('show');
-    });
-
-    $('.order__close-button').click(function () {
-        $('.backdrop').removeClass('show');
-    });
-
-    $(document).on('mouseup', function (e) {
-        // Проверяем, был ли клик вне элемента .order и его дочерних элементов, а также
-        // наличие класса 'show' у элемента .backdrop
-        if (!$('.order').is(e.target) && $('.order').has(e.target).length === 0 && $('.backdrop').hasClass('show')) {
-            $('.backdrop').removeClass('show');
-        }
-    });
-
-
-
-    // Light/Dark Mode
-    $('.theme-switcher').click(function () {
-        $(this).toggleClass('switch');
-        $('.body').toggleClass('light');
-
-    });
 
     // вызов меню
     $(function () {
@@ -84,72 +59,16 @@ $(function () {
         });
     });
 
-
-    // если .blog__list есть на странице, то микситап будет проинициализирован
-    if ($('.blog__list').length) {
-        var mixer = mixitup('.blog__list');
-    }
 });
 
+$(document).ready(function() {
+	$('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
+		disableOn: 700,
+		type: 'iframe',
+		mainClass: 'mfp-fade',
+		removalDelay: 160,
+		preloader: false,
 
-$(function () {
-    // Проверяем, что текущий URL содержит "requirements"
-    if (window.location.pathname.includes("requirements")) {
-
-        // гармошка блоков критериев
-        $(function () {
-            $('#reqComContent').hide();
-            $('#reqHtmlContent').hide();
-            $('#reqCssContent').hide();
-            $('#reqAdaptiveContent').hide();
-            $('#reqDesignContent').hide();
-
-            $('#reqComBtn').click(function () {
-                $(this).toggleClass('active');
-                $('#reqComContent').slideToggle();
-            });
-            $('#reqHtmlBtn').click(function () {
-                $(this).toggleClass('active');
-                $('#reqHtmlContent').slideToggle();
-            });
-            $('#reqCssBtn').click(function () {
-                $(this).toggleClass('active');
-                $('#reqCssContent').slideToggle();
-            });
-            $('#reqAdaptiveBtn').click(function () {
-                $(this).toggleClass('active');
-                $('#reqAdaptiveContent').slideToggle();
-            });
-            $('#reqDesignBtn').click(function () {
-                $(this).toggleClass('active');
-                $('#reqDesignContent').slideToggle();
-            });
-
-        });
-
-        // вызов, закрытие деталей критерия при клике вне деталей и по кнопке закрытия
-        $(function () {
-            // Обработчик кнопок открытия
-            $('.req-card__button').click(function () {
-                $('body').addClass('lock');
-                var details = $(this).next('.req-card__details');
-                details.addClass('show');
-
-                // Добавляем обработчик для закрытия при клике вне элемента
-                $(document).on('mouseup.details', function (e) {
-                    if (!details.is(e.target) && details.has(e.target).length === 0) {
-                        details.removeClass('show');
-                        $('body').removeClass('lock');
-                        $(document).off('mouseup.details'); // Удаляем обработчик после закрытия
-                    }
-                });
-            });
-
-            // Обработчик кнопок закрытия
-            $('.req-card__close-button').click(function () {
-                $('body').removeClass('lock');
-                $(this).closest('.req-card__details').removeClass('show');
-            });
-        });
-    }
+		fixedContentPos: false
+	});
 });
