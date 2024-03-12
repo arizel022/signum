@@ -1,0 +1,116 @@
+
+.header {
+    width: 100%;
+    position: fixed;
+    top: 22px;
+    z-index: 100;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: $d;
+    left: 50%;
+    max-width: 1488px;
+    transform: translateX(-50%);
+
+    &__inner {
+        display: flex;
+        justify-content: flex-end;
+
+    }
+
+    &__logo {
+        position: absolute;
+        top: 13px;
+        left: 60px;
+    }
+
+
+
+    &__list {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    &__link {
+        font-size: 17px;
+        padding: 15px 24px;
+        border-radius: 33px;
+    }
+}
+
+
+
+// .burger-btn {
+//     display: block;
+//     width: 44px;
+//     height: 44px;
+//     border-radius: 7px;
+//     border: 1px solid var(--l);
+//     position: relative;
+//     margin-right: 25px;
+//     transition: border-color 0.3s;
+
+//     &:hover {
+//         border-color: var(--green-300);
+
+//         .burger-btn__line {
+//             background-color: var(--green-300);
+
+//             &:after {
+//                 background-color: var(--green-300);
+//             } 
+            
+//             &:before {
+//                 background-color: var(--green-300);
+//             }
+//         }
+//     }
+
+//     &:active, &.active {
+//         .burger-btn__line {
+//             width: 0;
+
+//             &:after {
+//                 top: 0;
+//                 transform: rotate(-45deg);
+//             } 
+            
+//             &:before {
+//                 bottom: 0;
+//                 transform: rotate(45deg);
+//             }
+//         }
+//     }
+
+//     &__line {
+//         display: block;
+//         width: 28px;
+//         height: 2px;
+//         background-color: var(--l);
+//         position: absolute;
+//         left: 7px;
+//         transition: width 0.2s, background-color 0.3s;
+
+//         &:after, &:before {
+//             content: '';
+//             display: block;
+//             width: 28px;
+//             height: 100%;
+//             background-color: var(--l);
+//             position: absolute;
+//             left: 0;
+//             transition: background-color 0.3s, transform 0.8s ease-out;
+//         }
+
+//         &:after {
+//             top: -7px;
+//         } 
+        
+//         &:before {
+//             bottom: -7px;
+//         }
+//     }
+// }
+
+
+

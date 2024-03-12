@@ -1,0 +1,95 @@
+@import 'common';
+
+$d: #040404;
+$d-l: #232323;
+$or: #FF5E19;
+$l: #DBDBCE;
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    line-height: 1.4;
+    font-size: 24px;
+    background-color: $l;
+    color: $l;
+}
+
+.wrapper {
+    max-width: 1512px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+// .container {
+//     margin: 0 auto;
+//     outline: 1px solid red;
+// }
+
+svg {
+    fill: currentColor;
+    stroke: inherit;
+}
+
+@import 'lego/header';
+@import 'lego/footer';
+
+.section {
+    &--dark {
+        background-color: $d;
+    }
+}
+
+
+.italic {
+    font-style: italic;
+}
+
+
+
+.button {
+    font-size: 17px;
+    padding: 16px 24px;
+    border-radius: 33px;
+    background-color: $or;
+    color: $d;
+
+    &--grey {
+        background-color: $d-l;
+        color: $l;
+    }
+}
+
+
+
+
+.close-button {
+    width: 44px;
+    height: 44px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid var(--green-400);
+    background-color: inherit;
+
+    &:before,
+    &:after {
+        content: '';
+        width: 30px;
+        height: 5px;
+        border-radius: 2px;
+        background-color: var(--green-400);
+        position: absolute;
+        z-index: 5;
+    }
+
+    &:before {
+        transform: rotate(45deg);
+    }
+
+    &:after {
+        transform: rotate(-45deg);
+    }
+}
