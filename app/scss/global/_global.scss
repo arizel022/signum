@@ -35,7 +35,6 @@ svg {
 }
 
 @import 'lego/header';
-@import 'lego/footer';
 
 .section {
     max-width: 1488px;
@@ -106,6 +105,12 @@ svg {
         background-color: transparent;
         border: 1px solid $d;
     }
+
+    &--light-stroke {
+        color: $l;
+        background-color: transparent;
+        border: 1px solid $l;
+    }
 }
 
 .title {
@@ -153,7 +158,7 @@ svg {
     width: 100%;
     height: 525px;
     border-radius: 20px;
-    background-image: url('../images/about/video.jpg');
+    color: $l;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -161,10 +166,13 @@ svg {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 
     &__desc {
-        max-width: 320px;
-        text-align: center;
+        font-size: 40px;
+    }
+
+    &__info {
         font-size: 20px;
     }
 }
@@ -193,5 +201,38 @@ svg {
     &--big {
     width: 203px;
     height: 203px;
+    }
+}
+
+.social {
+    display: flex;
+    gap: 20px;
+
+    &__item {
+        width: calc((100% - 2 * 20px) / 3);
+    }
+
+    &__link {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        border-radius: 17px;
+        background-color: #C5C5A9;
+        padding: 16px;
+        color: $d;
+
+        &--dark {
+            color: $w;
+            background-color: #292929;
+        }
+    }
+
+    &__link-title {
+        font-size: 16px;
+    }
+
+    &__link-name {
+        font-size: 27px;
     }
 }
