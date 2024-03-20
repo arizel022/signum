@@ -10,6 +10,11 @@
     left: 50%;
     max-width: 1488px;
     transform: translateX(-50%);
+    transition: top 1s;
+
+    &.fixed {
+        top: 0;
+    }
 
     &__inner {
         display: flex;

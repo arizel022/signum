@@ -8,7 +8,6 @@
     <div class="wrapper">
         @@include('../lego/header-ua.html', {
         })
-
         <main class="main">
             <section class="hero" id="hero">
                 <div class="hero__inner">
@@ -33,13 +32,13 @@
                             </li>
                             <li class="hero__item">
                                 <img src="images/hero/2.jpg" alt="" class="hero__img" width="306" height="180">
-                                <a class="button button--grey hero__button" href="">
+                                <a class="button button--grey hero__button" href="#edu">
                                     Пройти навчання
                                 </a>
                             </li>
                             <li class="hero__item">
                                 <img src="images/hero/3.jpg" alt="" class="hero__img" width="306" height="180">
-                                <a class="button button--grey hero__button" href="">
+                                <a class="button button--grey hero__button" href="#volunteer">
                                     Стати волонтером
                                 </a>
                             </li>
@@ -48,7 +47,7 @@
 
                 </div>
             </section>
-            <section class="about section section--dark">
+            <section class="about section section--dark" id="about">
                 <div class="container about__container">
                     <h2 class="title">
                         Про підрозділ
@@ -82,7 +81,7 @@
                             </p>
                         </div>
 
-                        <a class="video about__video popup-youtube" href="https://www.youtube.com/watch?v=hTbvOCQojOU" style="background-image: url('images/about/video.jpg');">
+                        <a class="video about__video popup-youtube" href="https://www.youtube.com/watch?v=bLpV2jQgli4" style="background-image: url('images/about/video.jpg');">
                             <span class="play-button play-button--big about__play-button"></span>
                             <span class="video__desc">
                                 Дивитись відео про підрозділ 
@@ -94,7 +93,7 @@
                     </div>
                 </div>
             </section>
-            <section class="team section section--dark">
+            <section class="team section section--dark" id="team">
                 <div class="container team__container">
                     <div class="team__info">
                         <h2 class="title">
@@ -188,7 +187,7 @@
                     </ul>
                 </div>
             </section>
-            <section class="volunteer section">
+            <section class="volunteer section" id="volunteer">
                 <div class="container volunteer__container">
                     <h2 class="title">
                         Стати волонтером
@@ -251,8 +250,7 @@
                     </li>
                 </ul>
             </section>
-
-            <section class="edu section section--dark">
+            <section class="edu section section--dark" id="edu">
                 <h2 class="big-title edu__big-title">
                     Пройти навчання 
                 </h2>
@@ -299,7 +297,6 @@
                 </ul>
 
             </section>
-
             <section class="social-media section">
                 <h2 class="social-media__title">
                     Шукай дати актуальних семінарів з тактики в наших соціальних мережах 
@@ -352,7 +349,6 @@
                     </li>
                 </ul>
             </section>
-
             <section class="suspension section section--dark">
                 <h2 class="big-title suspension__big-title">
                     Застосування FPV-дронів
@@ -399,7 +395,7 @@
                     <a href="" class="button button--light-stroke">Хочу навчитися літати</a>
                 </div>
             </section>
-            <section class="join section">
+            <section class="join section" id="join">
                 <div class="container team__container">
                     <div class="join__info">
                         <h2 class="title">
@@ -520,36 +516,34 @@
 
 
             </section>
-
-            <footer class="footer">
-                <a class="logo footer__logo" href="./index.html">
-                    <img src="images/logo.svg" alt="" class="logo__img" width="220" height="318">
-                </a>
+            <!-- @@include('../lego/quick-to-top.html') -->
+        </main>
+        <footer class="footer">
+            <a class="logo footer__logo" href="#body">
+                <img src="images/logo.svg" alt="" class="logo__img" width="220" height="318">
+            </a>
+            <div class="footer__img-wrap">
                 <img src="images/footer.jpg" alt="" class="footer__img" width="1512" height="812">
                 <p class="footer__text">
                     Signum - з відвагою і повагою!
                 </p>
-            </footer>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            <!-- @@include('../lego/quick-to-top.html') -->
-        </main>
-
-        <!-- @@include('../lego/footer.html') -->
+            </div>
+            <ul class="footer__authors-list">
+                <li class="footer__authors-item">
+                    <span class="footer__authors-status">Дизайн проекту</span>
+                    <a href="" class="footer__authors-link">SAVKA</a>, 
+                    <a href="" class="footer__authors-link">Serge</a>
+                </li>
+                <li class="footer__authors-item">
+                    <span class="footer__authors-status">Розробка проекту</span>
+                    <a href="" class="footer__authors-link">Alex Mykhailov</a>
+                </li>
+                <li class="footer__authors-item">
+                    <span class="footer__authors-status">Шрифти</span>
+                    <a href="" class="footer__authors-link">Maksym Kobuzan</a>
+                </li>
+            </ul>
+        </footer>
     </div>
     <script src="js/main.min.js"></script>
 </body>

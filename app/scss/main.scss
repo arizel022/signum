@@ -435,11 +435,18 @@
 
 .footer {
     position: relative;
+    background-color: $d;
+
     &__logo {
         position: absolute;
         top: 0;
         left: 50%;
         transform: translate(-50%, -50%);
+        z-index: 2;
+    }
+
+    &__img-wrap {
+        position: relative;
     }
 
     &__text {
@@ -451,5 +458,24 @@
         transform: translateX(-50%);
         font-size: 52px;
         color: $w;
+    }
+
+    &__authors-list {
+        padding: 25px 0;
+        display: flex;
+        justify-content: center;
+        gap: 60px;
+        flex-wrap: wrap;
+        color: $l;
+    }
+
+    &__authors-status {
+        font-size: 14px;
+        display: block;
+    }
+
+    &__authors-link {
+        color: rgba($or, 0.7);
+        font-size: 17px;
     }
 }
