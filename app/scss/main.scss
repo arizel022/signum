@@ -1,16 +1,30 @@
 @import 'global/global';
 
 .hero {
+
+    @media (max-width: 992px) {
+        padding: 0 15px;
+    }
+
     &__inner {
-        height: 90vh;
+        // height: 90vh;
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: flex-end;
+        padding-top: 240px;
+        padding-bottom: 160px;
+
+        @media (max-width: 1200px) {
+            padding-bottom: 45px;
+        }
+
+        @media (max-width: 768px) {
+            padding-top: 190px;
+        }
     }
 
     &__content {
-        padding-top: 40px;
         max-width: 961px;
         width: 100%;
         color: $d;
@@ -20,27 +34,48 @@
         font-size: 83px;
         line-height: 1;
         margin-bottom: 20px;
+
+        @media (max-width: 992px) {
+            font-size: 54px;
+        }
+
+        @media (max-width: 576px) {
+            font-size: 46px;
+        }
     }
 
     &__text {
         font-size: 30px;
         margin-bottom: 37px;
+
+        @media (max-width: 768px) {
+            font-size: 22px;
+        }
     }
 
     &__list {
         display: flex;
+        width: 100%;
         gap: 8px;
+
+        @media (max-width: 992px) {
+            overflow-x: scroll;
+        }
+
     }
 
     &__item {
         padding: 5px 5px 10px 5px;
         background-color: $d;
         border-radius: 10px;
+        flex-shrink: 0;
     }
 
     &__img {
         border-radius: 8px;
         margin-bottom: 10px;
+        width: 306px;
+        height: 180px;
     }
 
     &__button {
@@ -62,6 +97,10 @@
         gap: 50px;
         justify-content: space-between;
         align-items: baseline;
+
+        @media (max-width: 992px) {
+            flex-wrap: wrap;
+        }
     }
 
     &__content {
@@ -81,10 +120,23 @@
 
     &__video {
         margin-bottom: 35px;
+
+        @media (max-width: 992px) {
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
 
     &__play-button {
         margin-bottom: 25px;
+    }
+
+    &__button {
+        @media (max-width: 992px) {
+            display: block;
+            width: fit-content;
+            margin: 0 auto;
+        }
     }
 }
 
@@ -94,12 +146,24 @@
     margin-top: -2px;
     padding-bottom: 90px;
 
+    @media (max-width: 768px) {
+        padding-bottom: 50px;
+    }
+
     &__info {
         display: flex;
         gap: 50px;
         justify-content: space-between;
         align-items: baseline;
         margin-bottom: 100px;
+
+        @media (max-width: 1200px) {
+            flex-wrap: wrap;
+        }
+
+        @media (max-width: 992px) {
+            margin-bottom: 40px;
+        }
     }
 
     &__video-list {
@@ -112,6 +176,16 @@
         width: calc((100% - 2 * 30px) / 3);
         border-radius: 10px;
         overflow: hidden;
+
+        @media (max-width: 1200px) {
+            width: calc((100% - 1 * 30px) / 2);
+        }
+
+        @media (max-width: 576px) {
+            width: 100%;
+            max-width: 340px;
+            margin: 0 auto;
+        }
     }
 
     &__video-link {
@@ -123,6 +197,10 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
+
+        @media (max-width: 576px) {
+            height: 206px;
+        }
     }
 
     &__play-button {
@@ -138,6 +216,10 @@
         padding: 25px 25px 30px;
         background-color: $l;
         color: $d;
+
+        @media (max-width: 576px) {
+            padding: 15px;
+        }
     }
 
     &__video-title {
@@ -160,11 +242,21 @@
     padding-top: 90px;
     padding-bottom: 100px;
 
+    @media (max-width: 768px) {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
     &__container {
         display: flex;
         gap: 50px;
         justify-content: space-between;
         align-items: baseline;
+
+        @media (max-width: 992px) {
+            flex-wrap: wrap;
+            gap: 30px;
+        }
     }
 
     &__content {
@@ -186,6 +278,10 @@
         background-color: $d;
         border-radius: 10px;
         padding: 40px;
+
+        @media (max-width: 768px) {
+            padding: 20px 15px;
+        }
     }
 
     &__cta-text {
@@ -194,6 +290,11 @@
         color: $l;
         line-height: 1.1;
         margin-bottom: 35px;
+
+        @media (max-width: 768px) {
+            font-size: 25px;
+            margin-bottom: 15px;
+        }
     }
 
 }

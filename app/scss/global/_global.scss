@@ -14,6 +14,10 @@ body {
     font-size: 24px;
     background-color: $l;
     color: $l;
+
+    @media (max-width: 992px) {
+        font-size: 16px;
+    }
 }
 
 .wrapper {
@@ -21,6 +25,10 @@ body {
     width: 100%;
     margin: 0 auto;
     padding: 0 15px;
+
+    @media (max-width: 992px) {
+        padding: 0;
+    }
 }
 
 .container {
@@ -44,13 +52,23 @@ svg {
     &--dark {
         background-color: $d;
     }
+
+    @media (max-width: 992px) {
+        padding: 0 20px;
+    }
 }
 
+.logo {
+    display: block;
+
+    &__img {
+        height: auto;
+    }
+}
 
 .italic {
     font-style: italic;
 }
-
 
 
 .button {
@@ -60,6 +78,11 @@ svg {
     background-color: $or;
     color: $d;
     line-height: 1;
+
+    @media (max-width: 768px)  {
+        font-size: 16px;
+        text-align: center;
+    }
 
     &--grey {
         background-color: $d-l;
@@ -116,6 +139,10 @@ svg {
 .title {
     font-size: 38px;
     max-width: 420px;
+
+    @media (max-width: 992px) {
+        font-size: 30px;
+    }
 }
 
 .big-title {
@@ -168,12 +195,26 @@ svg {
     align-items: center;
     text-align: center;
 
+    @media (max-width: 992px) {
+        max-width: 351px;
+        height: 209px;
+        padding: 0 15px;
+    }
+
     &__desc {
         font-size: 40px;
+
+        @media (max-width: 992px) {
+            font-size: 18px;
+        }
     }
 
     &__info {
         font-size: 20px;
+
+        @media (max-width: 992px) {
+            font-size: 14px;
+        }
     }
 }
 
@@ -187,6 +228,11 @@ svg {
     outline: 1px solid $l;
     backdrop-filter: blur(10px);
 
+    @media (max-width: 992px) {
+        width: 80px;
+        height: 80px;
+    }
+
     &:before {
         content: '';
         margin-left: 12px;
@@ -196,11 +242,20 @@ svg {
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
+
+        @media (max-width: 992px) {
+            margin-left: 6px;
+        }
     }
 
     &--big {
-    width: 203px;
-    height: 203px;
+        width: 203px;
+        height: 203px;
+
+        @media (max-width: 992px) {
+            width: 80px;
+            height: 80px;
+        }
     }
 }
 

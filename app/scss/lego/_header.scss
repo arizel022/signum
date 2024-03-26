@@ -12,6 +12,10 @@
     transform: translateX(-50%);
     transition: top 1s;
 
+    @media (max-width: 768px) {
+        width: calc(100% - 30px);
+    }
+
     &.fixed {
         top: 0;
     }
@@ -19,103 +23,152 @@
     &__inner {
         display: flex;
         justify-content: flex-end;
+        padding-left: 250px;
 
+        @media (max-width: 992px) {
+            padding-left: 100px;
+        }
     }
 
     &__logo {
         position: absolute;
         top: 13px;
         left: 60px;
+
+        @media (max-width: 992px) {
+            max-width: 100px;
+            left: 20px;
+        }
+
+        @media (max-width: 768px) {
+            max-width: 45px;
+            top: 8px;
+            z-index: 10;
+        }
     }
-
-
 
     &__list {
         display: flex;
         align-items: center;
+        justify-content: flex-end;
+        flex-wrap: wrap;
         gap: 10px;
+
+        @media (max-width: 768px) {
+            position: absolute;
+            opacity: 0;
+            pointer-events: none;
+            background-color: $d;
+            top: 0;
+            left: 0;
+            padding: 200px 30px 45px;
+            width: 100%;
+            border-radius: 10px;
+            flex-direction: column;
+            align-items: flex-start;
+            transition: opacity 0.5s;
+
+            &.active {
+                opacity: 1;
+                pointer-events: all;
+            }
+        }
+    }
+
+    &__item {
+        @media (max-width: 768px) {
+            width: 100%;
+        }
+
+        &--contacts {
+            display: none;
+
+            @media (max-width: 768px) {
+                display: block;
+            }
+        }
     }
 
     &__link {
         font-size: 17px;
         padding: 15px 24px;
         border-radius: 33px;
+
+        @media (max-width: 768px) {
+            font-size: 29px;
+        }
+    }
+
+    &__button {
+        @media (max-width: 768px) {
+            width: 100%;
+            text-align: center;
+        }
     }
 }
 
 
+.burger-btn {
 
-// .burger-btn {
-//     display: block;
-//     width: 44px;
-//     height: 44px;
-//     border-radius: 7px;
-//     border: 1px solid var(--l);
-//     position: relative;
-//     margin-right: 25px;
-//     transition: border-color 0.3s;
+    display: none;
 
-//     &:hover {
-//         border-color: var(--green-300);
-
-//         .burger-btn__line {
-//             background-color: var(--green-300);
-
-//             &:after {
-//                 background-color: var(--green-300);
-//             } 
+    @media (max-width: 768px) {
+        display: block;
+        width: 50px;
+        height: 50px;
+        z-index: 10;
+        border-radius: 50%;
+        background-color: $or;
+        position: relative;
+        transition: border-color 0.3s;
+    
+    
+        &:active, &.active {
+            .burger-btn__line {
+                width: 0;
+    
+                &:after {
+                    top: 0;
+                    transform: rotate(-45deg);
+                } 
+                
+                &:before {
+                    bottom: 0;
+                    transform: rotate(45deg);
+                }
+            }
+        }
+    
+        &__line {
+            display: block;
+            width: 20px;
+            height: 2px;
+            background-color: $d;
+            position: absolute;
+            left: 14px;
+            transition: width 0.2s, background-color 0.3s;
+    
+            &:after, &:before {
+                content: '';
+                display: block;
+                width: 20px;
+                height: 100%;
+                background-color: $d;
+                position: absolute;
+                left: 0;
+                transition: background-color 0.3s, transform 0.8s ease-out;
+            }
+    
+            &:after {
+                top: -4px;
+            } 
             
-//             &:before {
-//                 background-color: var(--green-300);
-//             }
-//         }
-//     }
-
-//     &:active, &.active {
-//         .burger-btn__line {
-//             width: 0;
-
-//             &:after {
-//                 top: 0;
-//                 transform: rotate(-45deg);
-//             } 
-            
-//             &:before {
-//                 bottom: 0;
-//                 transform: rotate(45deg);
-//             }
-//         }
-//     }
-
-//     &__line {
-//         display: block;
-//         width: 28px;
-//         height: 2px;
-//         background-color: var(--l);
-//         position: absolute;
-//         left: 7px;
-//         transition: width 0.2s, background-color 0.3s;
-
-//         &:after, &:before {
-//             content: '';
-//             display: block;
-//             width: 28px;
-//             height: 100%;
-//             background-color: var(--l);
-//             position: absolute;
-//             left: 0;
-//             transition: background-color 0.3s, transform 0.8s ease-out;
-//         }
-
-//         &:after {
-//             top: -7px;
-//         } 
-        
-//         &:before {
-//             bottom: -7px;
-//         }
-//     }
-// }
+            &:before {
+                bottom: -4px;
+            }
+        }
+    }
+}
 
 
 

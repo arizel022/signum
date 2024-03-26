@@ -5,26 +5,26 @@ $(function () {
     // вызов меню
     $(function () {
         var menuVisible = false;
-        $('.menu__list').hide();
+
         // Показать / скрыть меню при клике на кнопку
         $('.burger-btn').click(function (e) {
             e.stopPropagation(); // Остановить всплытие события, чтобы не срабатывало на document.click
             menuVisible = !menuVisible;
             $(this).toggleClass('active');
-            $('.menu__list').slideToggle();
+            $('.header__list').toggleClass('active');
         });
         // Скрыть меню при клике за его пределами
         $(document).click(function (e) {
-            if (menuVisible && !$(e.target).closest('.menu__list').length && !$(e.target).closest('.burger-btn').length) {
+            if (menuVisible && !$(e.target).closest('.header__list').length && !$(e.target).closest('.burger-btn').length) {
                 $('.burger-btn').removeClass('active');
-                $('.menu__list').slideToggle();
+                $('.header__list').toggleClass('active');
                 menuVisible = false;
             }
         });
         // Скрыть меню при клике на элемент .menu__item
-        $('.menu__item').click(function () {
+        $('.header__item').click(function () {
             $('.burger-btn').removeClass('active');
-            $('.menu__list').slideToggle();
+            $('.header__list').toggleClass('active');
             menuVisible = false;
         });
     });
@@ -62,8 +62,7 @@ $(function () {
 });
 
 $(document).ready(function() {
-	$('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
-		disableOn: 700,
+	$('.popup-youtube').magnificPopup({
 		type: 'iframe',
 		mainClass: 'mfp-fade',
 		removalDelay: 160,
@@ -72,3 +71,5 @@ $(document).ready(function() {
 		fixedContentPos: false
 	});
 });
+
+
