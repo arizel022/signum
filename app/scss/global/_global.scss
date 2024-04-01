@@ -141,7 +141,11 @@ svg {
     max-width: 420px;
 
     @media (max-width: 992px) {
-        font-size: 30px;
+        font-size: 34px;
+    }
+
+    @media (max-width: 768px) {
+        max-width: 100%;
     }
 }
 
@@ -150,6 +154,10 @@ svg {
 
     @media (max-width: 768px) {
         font-size: 44px;
+    }
+
+    @media (max-width: 576px) {
+        font-size: 30px;
     }
 }
 
@@ -303,6 +311,6 @@ svg {
     }
 
     &__link-name {
-        font-size: 27px;
+        font-size: 25px;
     }
 }
