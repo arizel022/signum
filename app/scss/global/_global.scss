@@ -13,7 +13,7 @@ body {
     font-weight: 400;
     line-height: 1.4;
     font-size: 24px;
-    background-color: $l;
+    background-color: $d;
     color: $l;
 
     @media (max-width: 992px) {
@@ -26,6 +26,7 @@ body {
     width: 100%;
     margin: 0 auto;
     padding: 0 15px;
+    background-color: $l;
 
     @media (max-width: 992px) {
         padding: 0;
@@ -63,12 +64,28 @@ body {
 
 
 .button {
+    // basic button - orange
     font-size: 17px;
     padding: 18px 24px 15px 24px;
     border-radius: 33px;
     background-color: $or;
     color: $d;
     line-height: 1;
+    transition: color 0.3s, outline 0.3s, opacity 0.3s, box-shadow 0.3s, background-color 0.3s;
+
+    &:hover {
+        box-shadow: inset 5px 5px 11px #66260a,
+        inset -5px -5px 7px #ff9628;
+    }
+
+    &:focus {
+        outline: 1px solid $or;
+        outline-offset: 5px;
+    }
+
+    &:active {
+        opacity: 0.7;
+    }
 
     &--big {
         font-size: 24px;
@@ -83,46 +100,57 @@ body {
     &--grey {
         background-color: $d-l;
         color: $l;
-    }
 
-    //зелена з іконкою
-    &--green {
-        background-color: #79B72B;
-        color: $w;
-        position: relative;
-        padding-left: 67px;
-
-        &:before, &:after {
-            content: '';
-            display: block;
-            position: absolute;
-            width: 11px;
-            height: 11px;
-            transform: translateY(-50%) rotate(135deg);
-            border-left: 2px solid $w;
-            border-top: 2px solid $w;
-            left: 0;
-            top: 50%;
+        &:hover {
+            color: $or;
+            box-shadow: inset 5px 5px 11px #0e0e0e,
+            inset -5px -5px 11px #383838;
         }
 
-        &:before {
-            left: 30px;
-        }
-
-        &:after {
-            left: 35px;
+        &:focus {
+            outline-offset: 0;
         }
     }
 
     &--black {
-        color: $w;
         background-color: $d;
+        color: $l;
+
+        &:hover {
+            color: $or;
+            box-shadow: inset 5px 5px 11px #000000,
+            inset -5px -5px 11px #5a5a5a;
+        }
+
+        &:focus {
+            outline-offset: 0;
+        }
     }
 
     &--black-stroke {
         color: $d;
         background-color: transparent;
         border: 1px solid $d;
+
+        &:hover {
+            box-shadow: inset 5px 5px 11px #585852,
+            inset -5px -5px 11px #ffffff;
+        }
+
+        &:focus {
+            outline-offset: 0;
+        }
+    }
+
+    &--dgreen {
+        &:hover {
+            box-shadow: inset 5px 5px 11px #1a1a0c,
+            inset -5px -5px 11px #666630;
+        }
+
+        &:focus {
+            outline-offset: 0;
+        }
     }
 
     &--light-stroke {
@@ -237,6 +265,9 @@ body {
     border-radius: 50%;
     outline: 1px solid $l;
     backdrop-filter: blur(10px);
+    transition: box-shadow 0.3s, outline 0.5s;
+
+
 
     @media (max-width: 992px) {
         width: 80px;
@@ -282,37 +313,7 @@ body {
         max-width: 437px;
         width: 100%;
     }
-
-    &__link {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        gap: 20px;
-        border-radius: 17px;
-        background-color: #C5C5A9;
-        padding: 16px;
-        color: $d;
-
-        &--dark {
-            color: $w;
-            background-color: #292929;
-        }
-
-        .icon {
-            flex-shrink: 0;
-        }
-    }
-
-    &__link-title {
-        font-size: 16px;
-    }
-
-    &__link-name {
-        font-size: 25px;
-    }
 }
-
 
 .social-link {
     width: 100%;
@@ -323,6 +324,20 @@ body {
     background-color: #C5C5A9;
     padding: 16px;
     color: $d;
+
+    transition: color 0.3s, outline 0.3s, opacity 0.3s;
+
+    &:hover {
+        color: $or;
+    }
+
+    &:focus {
+        outline: 1px solid $or;
+    }
+
+    &:active {
+        opacity: 0.7;
+    }
 
     &--dark {
         color: $w;
