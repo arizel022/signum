@@ -52,7 +52,7 @@
         align-items: center;
         justify-content: flex-end;
         flex-wrap: wrap;
-        gap: 10px;
+        gap: 20px;
 
         @media (max-width: 768px) {
             position: absolute;
@@ -79,19 +79,10 @@
         @media (max-width: 768px) {
             width: 100%;
         }
-
-        &--contacts {
-            display: none;
-
-            @media (max-width: 768px) {
-                display: block;
-            }
-        }
     }
 
     &__link {
         font-size: 17px;
-        padding: 15px 24px;
         border-radius: 33px;
 
         @media (max-width: 768px) {

@@ -54,3 +54,8 @@
 .none {
     display: none !important;
 }
+
+svg {
+    fill: currentColor;
+    stroke: inherit;
+}

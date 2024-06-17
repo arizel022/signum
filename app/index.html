@@ -33,31 +33,33 @@
                         Наша команда
                     </a>
                 </li>
-                <li class="header__item header__item--contacts">
-                    <a class="header__link" href="#contact">
-                        Контакти
-                    </a>
-                </li>
                 <li class="header__item">
-                    <a class="button button--grey header__button" href="#volunteer">
+                    <a class="header__link" href="#volunteer">
                         Стати волонтером
                     </a>
                 </li>
                 <li class="header__item">
-                    <a class="button button--grey header__button" href="#edu">
+                    <a class="header__link" href="#edu">
                         Пройти навчання
                     </a>
                 </li>
                 <li class="header__item">
-                    <a class="button header__button" href="#join">
+                    <a class="header__link" href="#join">
                         Приєднатись до підрозділу
+                    </a>
+                </li>
+                <li class="header__item">
+                    <a class="header__link button button--grey" href="#contact">
+                        Контакти
                     </a>
                 </li>
             </ul>
         </nav>
 
 </header>
+
         <main class="main">
+
             <section class="hero" id="hero">
                 <div class="hero__inner">
 
@@ -65,7 +67,10 @@
                         <h1 class="hero__title">
                             Військовий
                             <br>
-                            підрозділ SIGNUM
+                            підрозділ
+                            <span class="hero__subtitle">
+                                signum
+                            </span>
                         </h1>
                         <p class="hero__text">
                             Цей підрозділ першим в світі вдало застосували
@@ -75,7 +80,7 @@
                         <ul class="hero__list">
                             <li class="hero__item">
                                 <img src="images/hero/1.jpg" alt="" class="hero__img" width="306" height="180">
-                                <a class="button hero__button" href="">
+                                <a class="button button--grey hero__button" href="">
                                     Приєднатись до підрозділу
                                 </a>
                             </li>
@@ -96,7 +101,6 @@
 
                 </div>
             </section>
-
             <section class="about section section--dark" id="about">
                 <div class="container about__container">
                     <h2 class="title">
@@ -106,22 +110,22 @@
 
                         <div class="about__text">
                             <p>
-                                Створений як добровольчий загін в лютому 2022 - командир “Сова” (воює з 2014). Оборона Києва (Мощун, Ірпінь, Велика Димерка).
+                                Сігнум створений як добровольчий загін у лютому 2022. Командир підрозділу - досвідчений воїн “Сова”, який воює з 2014 року. Підрозділ брав безпосередню участь в Обороні Києва - Мощун, Ірпінь, Велика Димерка, Лук’янівка.
                             </p>
                             <p>
-                                В квітні 2022 Сігнум, як добровольчий загін, приєднався до позицій 93ї бригади “Холодний Яр” під Ізюмом (бої за с. Заводи, В.Комишуваха, Мазанівка).
+                                В квітні 2022 Сігнум, як добровольчий загін, приєднався до позицій 93-ої бригади “Холодний Яр” під Ізюмом - бої за с. Заводи, В.Комишуваху, Мазанівку.
                             </p>
                             <p>
-                                Червень 2022 вперше в історії успішно застосували ФПВ дрон-камікадзе (відео “Сині Двері”).
+                                У червні 2022 бійці вперше в історії успішно застосували FPV дрон-камікадзе - відоме відео “Сині Двері”.
                             </p>
                             <p>
-                                В серпні 2022 о/с добровольчого загону Сігнум мобілізувався до 93ї бригади. Бої за Соледар-Бахмут.
+                                У серпні 2022 особовий склад загону мобілізувався до 93-ої бригади. Підрозділ пройшов тяжкі бої за Соледар та Бахмут, не втративши своїх позицій.
                             </p>
                             <p>
-                                Лише за три останніх місяці 2023 підрозділом Сігнум знищено/уражено (з підтвердженням) понад 180 одиниць ворожої техніки.
+                                Лише за останніх 3 місяці 2023 підрозділом Сігнум знищено/уражено (з підтвердженням) понад 180 одиниць ворожої техніки.
                             </p>
                             <p>
-                                Сігнум формувався на добровольчих засадах без штучної ієрархії,  авторитет лише за рахунок  компетентності та ефективності. 
+                                Сігнум формувався на добровольчих засадах без штучної ієрархії, авторитет лише за рахунок компетентності та ефективності.
                             </p>
                             <p>
                                 Підрозділ зберігає та заохочує ініціативність в освоєнні нової зброї, технологій, тактик.
@@ -131,6 +135,7 @@
                             </p>
                         </div>
 
+                        <!-- 
                         <a class="video about__video popup-youtube" href="https://www.youtube.com/watch?v=bLpV2jQgli4" style="background-image: url('images/about/video.jpg');">
                             <span class="play-button play-button--big about__play-button"></span>
                             <span class="video__desc">
@@ -138,8 +143,10 @@
                             </span>
                             <span class="video__info">8:30 хвилин</span>
                         </a>
+                        <a href="" class="about__button button">Приєднатись до підрозділу</a> 
+                        -->
 
-                        <a href="" class="about__button button">Приєднатись до підрозділу </a>
+
                     </div>
                 </div>
             </section>
@@ -164,8 +171,7 @@
                             </a>
                             <div class="team__video-content">
                                 <h3 class="team__video-title">
-                                    Rosenberg Sergey <br>
-                                    про роботу в підрозділі
+                                    Боєць Сергій про службу у Signum
                                 </h3>
                                 <span class="team__video-timing">
                                     8 хвилин відео
@@ -180,8 +186,7 @@
                             </a>
                             <div class="team__video-content">
                                 <h3 class="team__video-title">
-                                    Rosenberg Sergey <br>
-                                    про роботу в підрозділі
+                                    Боєць Кама про службу у Signum
                                 </h3>
                                 <span class="team__video-timing">
                                     8 хвилин відео
@@ -189,14 +194,13 @@
                             </div>
                         </li>
                         <li class="team__video-item">
-                            <a href="https://www.youtube.com/watch?v=hTbvOCQojOU" class="team__video-link popup-youtube" style="background-image: url('images/team/1.jpg');">
+                            <a href="https://www.youtube.com/watch?v=hTbvOCQojOU" class="team__video-link popup-youtube" style="background-image: url('images/team/3.jpg');">
                                 <span class="play-button team__play-button"></span>
                                 <span class="team__video-label">Дивитись відео</span>
                             </a>
                             <div class="team__video-content">
                                 <h3 class="team__video-title">
-                                    Rosenberg Sergey <br>
-                                    про роботу в підрозділі
+                                    Боєць Вікінг про службу у Signum
                                 </h3>
                                 <span class="team__video-timing">
                                     8 хвилин відео
@@ -205,14 +209,13 @@
 
                         </li>
                         <li class="team__video-item">
-                            <a href="https://www.youtube.com/watch?v=hTbvOCQojOU" class="team__video-link popup-youtube" style="background-image: url('images/team/2.jpg');">
+                            <a href="https://www.youtube.com/watch?v=hTbvOCQojOU" class="team__video-link popup-youtube" style="background-image: url('images/team/4.jpg');">
                                 <span class="play-button team__play-button"></span>
                                 <span class="team__video-label">Дивитись відео</span>
                             </a>
                             <div class="team__video-content">
                                 <h3 class="team__video-title">
-                                    Rosenberg Sergey <br>
-                                    про роботу в підрозділі
+                                    Signum знищили новітню російську САУ 2С40 Флокс
                                 </h3>
                                 <span class="team__video-timing">
                                     8 хвилин відео
@@ -220,25 +223,36 @@
                             </div>
                         </li>
                         <li class="team__video-item">
-                            <a href="https://www.youtube.com/watch?v=hTbvOCQojOU" class="team__video-link popup-youtube" style="background-image: url('images/team/1.jpg');">
+                            <a href="https://www.youtube.com/watch?v=hTbvOCQojOU" class="team__video-link popup-youtube" style="background-image: url('images/team/5.jpg');">
                                 <span class="play-button team__play-button"></span>
                                 <span class="team__video-label">Дивитись відео</span>
                             </a>
                             <div class="team__video-content">
                                 <h3 class="team__video-title">
-                                    Rosenberg Sergey <br>
-                                    про роботу в підрозділі
+                                    Сергій Стерненко запитує Signum про перше застосування на війні FPV дрона-камікадзе
                                 </h3>
                                 <span class="team__video-timing">
                                     8 хвилин відео
                                 </span>
                             </div>
+                        </li>
+                        <li class="team__video-item">
 
+                            <h3 class="team__video-title">
+                                Підписуйтесь на youtube <br> канал Signum
+                            </h3>
+
+
+                            <a href="https://www.youtube.com/watch?v=hTbvOCQojOU" class="team__youtube-link">
+                                <svg class="icon" width="136" height="31">
+                                    <use href="images/icons/sprite.svg#icon-youtube"></use>
+                                </svg>
+                            </a>
                         </li>
                     </ul>
                 </div>
             </section>
- 
+
             <section class="volunteer section" id="volunteer">
                 <div class="container volunteer__container">
                     <h2 class="title">
@@ -247,24 +261,24 @@
                     <div class="volunteer__content">
                         <div class="volunteer__text">
                             <p>
-                                Сігнум було створено як добровольчий загін і деякий час ми воювали без зарплати і за рахунок власних ресурсів або ресурсів волонтерів. 
-                            </p>
-                            <p>
+                                Сігнум було створено як добровольчий загін, і деякий час ми воювали без зарплати, за рахунок власних ресурсів або ресурсів волонтерів.
+                                <br>
                                 Тому ми дуже цінуємо волонтерів, їхню роботу і підтримку. Розвиваємо постійні контакти і маємо власну мережу в багатьох регіонах.
+                                <br>
+                                Серед наших волонтерів раді будемо бачити не лише тих, хто може фінансово підтримати окремі проекти підрозділу, але й людей, які розбираються в SMM, водіїв, радіотехніків, які можуть складати дрони чи корпуси до боєприпасів, механіків і медиків, реабілітологів.
                             </p>
                             <p>
-                                Серед наших волонтерів раді будемо бачити не лише тих, хто може фінансово підтримати окремі проекти підрозділу, але й людей, які розбираються в SMM, водіїв, радіотехніків, які можуть складати дрони чи корпуса до боєприпасів, механіків і медиків, реабілітологів.
+                                На постійній основі підрозділ співпрацює з Благодійним фондом GloryUA.
+                                <br>
+                                Відповідно до закону “Про волонтерську діяльність” фонд укладає договір з волонтером на певний строк та надає посвідчення волонтера.
                             </p>
                             <p>
-                                На постійній основі підрозділ співпрацює з Благодійним фондом GloryUA. Відповідно до закону “Про волонтерську діяльність” фонд укладає договір з волонтером на певний строк та надає посвідчення волонтера.
-                            </p>
-                            <p>
-                                Приналежність до волонтерської сім'ї Signum, дає можливість допомагати дійсно ефективному підрозділу, мати міцні соціальні зв'язки з гарними людьми, бійцями, іншими волонтерами, бути залученим до програм лояльності, які розвиває благодійний фонд та підрозділ Signum, проходити актуальні курси навчання по медицині, тактиці, управління дронами, отримувати унікальні військові сувеніри і контент.
+                                Приналежність до волонтерської сім'ї Signum дає можливість допомагати дійсно ефективному підрозділу, мати міцні соціальні зв'язки з гарними людьми, бійцями, іншими волонтерами, бути залученим до програм лояльності, які розвиває благодійний фонд та підрозділ Signum, проходити актуальні курси навчання по медицині, тактиці, управління дронами, отримувати унікальні військові сувеніри та контент.
                             </p>
                         </div>
                         <div class="volunteer__cta">
                             <p class="volunteer__cta-text">
-                                Хочеш стати волонтером підрозділу, заповни аткету
+                                Хочеш стати волонтером підрозділу, заповни анкету
                             </p>
                             <a href="" class="button">Анкета волонтера</a>
                         </div>
@@ -294,9 +308,6 @@
                 </div>
                 <ul class="donor__cta-list">
                     <li class="donor__cta-item">
-                        <a href="" class="button button--green">Задонатити через liqpay</a>
-                    </li>
-                    <li class="donor__cta-item">
                         <a href="" class="button button--black">Донат на монобанку</a>
                     </li>
                     <li class="donor__cta-item">
@@ -307,21 +318,15 @@
 
             <section class="edu section section--dark" id="edu">
                 <h2 class="big-title edu__big-title">
-                    Пройти навчання 
+                    Пройти навчання
                 </h2>
                 <div class="edu__text">
                     <p>
-                        Підрозділ також сприяє підготовці цивільного населення для потреб оборони, як силами власних інструкторів так і волонтерами.
-                        <br>
-                        На базі благодійного фонду GloryUA з 2022 року діє школа fpv “Сині двері”.
+                        Сігнум також сприяє підготовці цивільного населення для потреб оборони, як силами власних інструкторів так і волонтерів. На базі благодійного фонду GloryUA з 2022 року діє школа fpv “Сині двері”. Підрозділ взаємодіє з бойовими медиками та заохочує до проходження курсів тактичної медицини. Також проводяться навчання на базі одного зі стрілецьких комплексів міста Києва.
                     </p>
                     <p>
-                        Підрозділ взаємодіє з бойовими медиками та заохочує до проходження курсів тактичної медицини.
-                    </p>
-                    <p>
-                        Наші бойові побратими діляться досвідом з тактики - це двох денний інтенсив , який включає теоретичну основу щодо сучасної тактики, сучасного озброєння, методів його застосування, методів протидії ворожій тактиці , а також практичні семінари. 
-                        <br>
-                        Навчання проводиться в донецькій області за 100 км від лінії бойового зіткнення.
+                        Наші бойові побратими діляться досвідом з тактики - це зазвичай дводенний інтенсив, який включає теоретичну основу щодо сучасної тактики, сучасного озброєння, методів його застосування, методів протидії ворожій тактиці, а також практичні семінари
+                        Навчання проводиться в Житомирській, Дніпропетровській, Донецькій області (за 100 км від лінії бойового зіткнення).
                     </p>
                 </div>
                 <ul class="edu__list">
@@ -329,84 +334,87 @@
                         <p class="edu__item-text">
                             Пілот FPV дрона
                         </p>
-                        <img src="images/edu/1.svg" alt="FPV дрон" class="edu__img" width="160" height="87">
+                        <img src="images/edu/1.svg" alt="FPV дрон" class="edu__img" width="225" height="160">
                     </li>
                     <li class="edu__item edu__item--sniper">
                         <p class="edu__item-text">
                             Вогнева підготовка
                         </p>
-                        <img src="images/edu/2.svg" alt="снайперська гвинтівка" class="edu__img" width="261" height="51">
+                        <img src="images/edu/2.svg" alt="снайперська гвинтівка" class="edu__img" width="200" height="94">
                     </li>
                     <li class="edu__item edu__item--med">
                         <p class="edu__item-text">
-                            Медицина
+                            Тактична <br>
+                            медицина
                         </p>
-                        <img src="images/edu/3.svg" alt="медичні війська" class="edu__img" width="144" height="109">
+                        <img src="images/edu/3.svg" alt="медичні війська" class="edu__img" width="135" height="100">
                     </li>
                     <li class="edu__item edu__item--tact">
                         <p class="edu__item-text">
-                            Спец.тактика
+                            Тактика ведення бою
                         </p>
-                        <img src="images/edu/4.svg" alt="тактика" class="edu__img" width="105" height="105">
+                        <img src="images/edu/4.svg" alt="тактика" class="edu__img" width="123" height="124">
                     </li>
                 </ul>
 
+                <div class="social-media section">
+                    <h2 class="social-media__title">
+                        Шукай дати актуальних семінарів з тактики в наших соціальних мережах
+                    </h2>
+                    <ul class="social">
+                        <li class="social__item">
+                            <a href="" class="social-link">
+                                <svg class="icon" width="66" height="66">
+                                    <use href="images/icons/sprite.svg#icon-inst"></use>
+                                </svg>
+                                <div class="social-link__info">
+                                    <h3 class="social-link__title">
+                                        instagram.com
+                                    </h3>
+                                    <p class="social-link__url">
+                                        @umftteam
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="" class="social-link">
+                                <svg class="icon" width="66" height="66">
+                                    <use href="images/icons/sprite.svg#icon-telegram"></use>
+                                </svg>
+                                <div class="social-link__info">
+                                    <h3 class="social-link__title">
+                                        t.me
+                                    </h3>
+                                    <p class="social-link__url">
+                                        @umftteam
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="" class="social-link">
+                                <svg class="icon" width="66" height="66">
+                                    <use href="images/icons/sprite.svg#icon-twitter"></use>
+                                </svg>
+                                <div class="social-link__info">
+                                    <h3 class="social-link__title">
+                                        twitter.com
+                                    </h3>
+                                    <p class="social-link__url">
+                                        /umftteam
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
             </section>
 
-            <section class="social-media section">
-                <h2 class="social-media__title">
-                    Шукай дати актуальних семінарів з тактики в наших соціальних мережах 
-                </h2>
-                <ul class="social">
-                    <li class="social__item">
-                        <a href="" class="social__link">
-                            <svg class="icon" width="66" height="66">
-                                <use href="images/icons/sprite.svg#icon-inst"></use>
-                            </svg>
-                            <div class="social__link-info">
-                                <h3 class="social__link-title">
-                                    instagram.com
-                                </h3>
-                                <p class="social__link-name">
-                                    @umftteam
-                                </p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="social__item">
-                        <a href="" class="social__link">
-                            <svg class="icon" width="52" height="43">
-                                <use href="images/icons/sprite.svg#icon-telegram"></use>
-                            </svg>
-                            <div class="social__link-info">
-                                <h3 class="social__link-title">
-                                    t.me
-                                </h3>
-                                <p class="social__link-name">
-                                    @umftteam
-                                </p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="social__item">
-                        <a href="" class="social__link">
-                            <svg class="icon" width="43" height="43">
-                                <use href="images/icons/sprite.svg#icon-twitter"></use>
-                            </svg>
-                            <div class="social__link-info">
-                                <h3 class="social__link-title">
-                                    twitter.com
-                                </h3>
-                                <p class="social__link-name">
-                                    /umftteam
-                                </p>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-            </section>
 
-            <section class="suspension section section--dark">
+
+            <section class="suspension section">
                 <h2 class="big-title suspension__big-title">
                     Застосування FPV-дронів
                 </h2>
@@ -442,14 +450,29 @@
                         </a>
                     </li>
                     <li class="suspension__item">
-                        <a href="" class="suspension__link popup-youtube" style="background-image: url('images/susp/1.jpg');">
-                            <span class="play-button suspension__play-button"></span>
+                        <p class="suspension__item-text">
+                            Дивись більше відео уражень в нашому телеграм каналі
+                        </p>
+
+                        <a href="" class="suspension__social-link social-link social-link--dark">
+                            <svg class="icon" width="52" height="43">
+                                <use href="images/icons/sprite.svg#icon-telegram"></use>
+                            </svg>
+                            <div class="social-link__info">
+                                <h3 class="social-link__title">
+                                    t.me
+                                </h3>
+                                <p class="social-link__url">
+                                    @umftteam
+                                </p>
+                            </div>
                         </a>
+                        
                     </li>
                 </ul>
                 <div class="suspension__cta">
-                    <a href="" class="button">Донат на дрон-камікадзе</a>
-                    <a href="" class="button button--light-stroke">Хочу навчитися літати</a>
+                    <a href="" class="button button--big">Донат на дрон-камікадзе</a>
+                    <a href="" class="button button--big button--light-stroke">Хочу навчитися літати</a>
                 </div>
             </section>
 
@@ -457,13 +480,13 @@
                 <div class="container team__container">
                     <div class="join__info">
                         <h2 class="title">
-                            Приєднатися до підрозділа
+                            Приєднатися до підрозділу
                         </h2>
                         <div class="join__content">
                             <a class="video join__video popup-youtube" href="https://www.youtube.com/watch?v=hTbvOCQojOU" style="background-image: url('images/susp.jpg');">
                                 <span class="play-button play-button--big join__play-button"></span>
                                 <span class="video__desc">
-                                    Дивитись відео інструкцію 
+                                    Дивитись відео інструкцію
                                     <br>
                                     як все відбувається
                                 </span>
@@ -492,9 +515,12 @@
                                 </li>
                             </ul>
                             <div class="join__cta">
-                                <a href="" class="button">Приєднатись до підрозділу</a>
-                                <a href="" class="button button--black-stroke">Задати питання в telegram</a>
+                                <a href="" class="button button--big">Приєднатись до підрозділу</a>
+                                <a href="" class="button button--big button--black-stroke">Задати питання в telegram</a>
                             </div>
+                            <p class="join__additional-text">
+                                У разі мобілізації до Signum, вартість навчання компенсується у подвійному розмірі у вигляді індивідуального бойового спорядження.
+                            </p>
 
                         </div>
                     </div>
@@ -570,12 +596,12 @@
                         </a>
                     </li>
                 </ul>
-            </section> 
+            </section>
 
 
             
         </main>
-        
+
 
         <footer class="footer">
             <a class="logo footer__logo" href="#body">
@@ -583,18 +609,18 @@
             </a>
             <div class="footer__img-wrap">
                 <img src="images/footer.jpg" alt="" class="footer__img" width="1512" height="812">
-                <p class="footer__text">
+                <!-- <p class="footer__text">
                     Signum - з відвагою і повагою!
-                </p>
+                </p> -->
             </div>
             <ul class="footer__authors-list">
                 <li class="footer__authors-item">
                     <span class="footer__authors-status">Дизайн проекту</span>
-                    <a href="" class="footer__authors-link">SAVKA</a>, 
+                    <a href="" class="footer__authors-link">SAVKA</a>,
                     <a href="" class="footer__authors-link">Serge</a>
                 </li>
                 <li class="footer__authors-item">
-                    <span class="footer__authors-status">Розробка проекту</span>    
+                    <span class="footer__authors-status">Розробка проекту</span>
                     <a href="" class="footer__authors-link">Alex Mykhailov</a>
                 </li>
                 <li class="footer__authors-item">

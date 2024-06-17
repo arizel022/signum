@@ -1,5 +1,6 @@
 
 @import 'common';
+
 $d: #040404;
 $d-l: #232323;
 $or: #FF5E19;
@@ -9,7 +10,7 @@ $w: #FEFEFE;
 
 body {
     font-family: 'Robit', sans-serif;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 1.4;
     font-size: 24px;
     background-color: $l;
@@ -31,23 +32,12 @@ body {
     }
 }
 
-.container {
-    // max-width: 1328px;
-    // 
-    // margin: 0 auto;
-}
-
-svg {
-    fill: currentColor;
-    stroke: inherit;
-}
-
 @import 'lego/header';
 
 .section {
     max-width: 1488px;
     width: 100%;
-    padding: 0 80px;
+    padding: 0 75px;
 
     &--dark {
         background-color: $d;
@@ -71,6 +61,7 @@ svg {
 }
 
 
+
 .button {
     font-size: 17px;
     padding: 18px 24px 15px 24px;
@@ -78,6 +69,11 @@ svg {
     background-color: $or;
     color: $d;
     line-height: 1;
+
+    &--big {
+        font-size: 24px;
+        font-weight: 500;
+    }
 
     @media (max-width: 768px)  {
         font-size: 16px;
@@ -138,7 +134,9 @@ svg {
 
 .title {
     font-size: 38px;
+    font-weight: 500;
     max-width: 420px;
+    width: 100%;
 
     @media (max-width: 992px) {
         font-size: 34px;
@@ -281,7 +279,7 @@ svg {
     }
 
     &__item {
-        max-width: 350px;
+        max-width: 437px;
         width: 100%;
     }
 
@@ -311,6 +309,35 @@ svg {
     }
 
     &__link-name {
+        font-size: 25px;
+    }
+}
+
+
+.social-link {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-radius: 17px;
+    background-color: #C5C5A9;
+    padding: 16px;
+    color: $d;
+
+    &--dark {
+        color: $w;
+        background-color: #292929;
+    }
+
+    .icon {
+        flex-shrink: 0;
+    }
+
+    &__title {
+        font-size: 16px;
+    }
+
+    &__url {
         font-size: 25px;
     }
 }
