@@ -51,9 +51,18 @@ body {
 
 .logo {
     display: block;
+    transition: opacity 0.3s, transform 0.5s;
 
     &__img {
         height: auto;
+    }
+
+    &:hover, &:focus {
+        opacity: 0.7;
+    }
+
+    &:active {
+        opacity: 0.5;
     }
 }
 
@@ -62,9 +71,8 @@ body {
 }
 
 
-
+// basic button - orange
 .button {
-    // basic button - orange
     font-size: 17px;
     padding: 18px 24px 15px 24px;
     border-radius: 33px;
