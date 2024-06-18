@@ -59,17 +59,38 @@ $(function () {
         });
     });
 
+    // popup
+
+    $('.modalBtn').click(function () {
+        $('.modal').addClass('show');
+        $('.body').addClass('lock');
+    });
+    $('.modalBtnClose').click(function () {
+        $('.modal').removeClass('show');
+        $('.body').removeClass('lock');
+    });
+    $(document).on('mouseup', function (e) {
+        // Проверяем, был ли клик вне элемента .order и его дочерних элементов, а также
+        // наличие класса 'show' у элемента .backdrop
+        if (!$('.modal__content').is(e.target) && $('.modal__content').has(e.target).length === 0 && $('.modal').hasClass('show')) {
+            $('.modal').removeClass('show');
+            $('.body').removeClass('lock');
+        }
+    });
+
+
+
 });
 
-$(document).ready(function() {
-	$('.popup-youtube').magnificPopup({
-		type: 'iframe',
-		mainClass: 'mfp-fade',
-		removalDelay: 160,
-		preloader: false,
+$(document).ready(function () {
+    $('.popup-youtube').magnificPopup({
+        type: 'iframe',
+        mainClass: 'mfp-fade',
+        removalDelay: 160,
+        preloader: false,
 
-		fixedContentPos: false
-	});
+        fixedContentPos: false
+    });
 });
 
 
