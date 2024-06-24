@@ -55,7 +55,7 @@ body {
 
 .logo {
     display: block;
-    transition: opacity 0.3s, transform 0.5s;
+    transition: opacity 0.3s, transform 0.5s, top 0.5s;
 
     &__img {
         height: auto;
