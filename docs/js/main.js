@@ -2,6 +2,10 @@ $(function () {
     new WOW().init();
 
 
+    $('.animBtn').click(function () {
+        $(this).toggleClass('active');
+    });
+
     // вызов меню
     $(function () {
         var menuVisible = false;

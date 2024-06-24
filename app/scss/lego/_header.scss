@@ -12,10 +12,6 @@
     transform: translateX(-50%);
     transition: top 1s;
 
-    @media (max-width: 768px) {
-        
-    }
-
     &.fixed {
         top: 0;
 
@@ -39,6 +35,9 @@
         position: absolute;
         top: 13px;
         left: 60px;
+        width: 135px;
+        height: 195px;
+
 
         @media (max-width: 992px) {
             max-width: 100px;
@@ -206,4 +205,38 @@
 }
 
 
+
+.animBtn {
+
+
+    &:hover, &:focus {
+        transform: scale(1.05);
+    }
+    .statLogo, .dynLogo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: opacity 0.5s;
+    }
+    
+    .statLogo {
+        opacity: 1;
+    }
+    
+    .dynLogo {
+        opacity: 0;
+        top: 31px;
+        transform: scale(1.6);
+    }
+
+    &.active {
+        .statLogo {
+            opacity: 0;
+        }
+        
+        .dynLogo {
+            opacity: 1;
+        }
+    }
+}
 
